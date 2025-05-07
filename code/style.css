@@ -1,0 +1,556 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@font-face {
+  font-family: "The Seasons";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Fontspring-DEMO-theseasons-reg.otf") format("opentype"), url("../fonts/Fontspring-DEMO-theseasons-ltit.otf") format("opentype"), url("../fonts/Fontspring-DEMO-theseasons-bd.otf") format("opentype"), url("../fonts/Fontspring-DEMO-theseasons-bdit.otf") format("opentype"), url("../fonts/Fontspring-DEMO-theseasons-it.otf") format("opentype"), url("../fonts/Fontspring-DEMO-theseasons-lt.otf") format("opentype");
+  font-display: swap;
+}
+header.scrolled {
+  background-color: #F6F6F6;
+  position: fixed;
+}
+header.scrolled #header-top,
+header.scrolled hr {
+  display: none !important;
+}
+header.scrolled #header-bottom .sub-menu {
+  top: 77px !important;
+}
+
+header {
+  background-color: #F6F6F6;
+  width: 100%;
+  position: absolute;
+  z-index: 100;
+  transition: all 0.3s ease 0s;
+  padding-block: 2.5px;
+}
+header #header-content {
+  width: 80%;
+  margin: auto;
+}
+header #header-content #header-top {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  transition: all 1s ease 0s;
+  padding-block: 8px;
+}
+header #header-content #header-top #header-top-left {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+header #header-content #header-top #header-top-left #header-top-left-text {
+  font-family: "Roboto Flex", sans-serif;
+  color: #333;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+}
+header #header-content #header-top #header-top-right,
+header #header-content #header-top #header-top-left {
+  display: flex;
+  gap: 20px;
+}
+header #header-content #header-top #header-top-right p,
+header #header-content #header-top #header-top-left p {
+  font-family: "Roboto Flex", sans-serif;
+  color: #333;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+}
+header #header-content #header-top #header-top-right p a,
+header #header-content #header-top #header-top-left p a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+header #header-content #header-top #header-top-right p a:hover,
+header #header-content #header-top #header-top-left p a:hover {
+  transition: all 0.3s ease 0s;
+}
+header #header-content #header-top #header-top-right p a img,
+header #header-content #header-top #header-top-left p a img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  filter: invert(38%) sepia(88%) saturate(1301%) hue-rotate(0deg) brightness(96%) contrast(104%);
+}
+header #header-content hr {
+  width: 100%;
+  height: 1px;
+  background-color: #c9c9c9;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+header #header-content #header-bottom {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+header #header-content #header-bottom #logo {
+  max-height: 70px;
+  width: auto;
+}
+header #header-content #header-bottom #site-navigation {
+  display: flex;
+  gap: 40px;
+}
+header #header-content #header-bottom #site-navigation #primary-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+header #header-content #header-bottom #site-navigation #primary-menu .menu-item.contact a {
+  color: #F6F6F6;
+  text-decoration: none;
+  background-color: #ff7b3d;
+  padding: 1rem 1.5rem;
+  margin: 0;
+  transition: color 0.3s;
+  margin-left: 3rem;
+  transition: all 0.3s ease 0s;
+}
+header #header-content #header-bottom #site-navigation #primary-menu .menu-item.contact a:hover {
+  background-color: #333;
+  color: #F6F6F6;
+}
+header #header-content #header-bottom #site-navigation #primary-menu .menu-item {
+  font-family: "Roboto Flex", sans-serif;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s;
+  height: 100%;
+}
+header #header-content #header-bottom #site-navigation #primary-menu .menu-item a {
+  font-size: 1rem;
+  height: 100%;
+  padding: 33px 20px;
+  margin: 0;
+}
+header #header-content #header-bottom #site-navigation #primary-menu .menu-item a:hover {
+  color: #CD4D13;
+  transition: all 0.3s ease 0s;
+}
+header #header-content #header-bottom #site-navigation #primary-menu .menu-item .sub-menu {
+  display: none;
+  position: absolute;
+  top: 114px;
+  padding-block: 0.5rem;
+  background-color: #F6F6F6;
+  transition: all 0.3s ease 0s;
+}
+header #header-content #header-bottom #site-navigation #primary-menu .menu-item .sub-menu .menu-item {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+header #header-content #header-bottom #site-navigation #primary-menu .menu-item .sub-menu .menu-item a {
+  display: block;
+  white-space: nowrap;
+  font-size: 1rem;
+  height: 100%;
+  padding: 0.625rem 3rem 0.625rem 1.5rem;
+  margin: 0;
+  box-sizing: border-box;
+}
+header #header-content #header-bottom #site-navigation #primary-menu .menu-item .sub-menu .menu-item a:hover {
+  color: #CD4D13;
+  transition: all 0.3s ease 0s;
+}
+
+main {
+  width: 100%;
+  padding-bottom: 4rem;
+  min-height: 92vh;
+}
+main section {
+  width: 100%;
+  box-sizing: border-box;
+  scroll-margin-top: 75px;
+  padding-top: 4rem;
+}
+main section.padding {
+  padding: 4rem 10%;
+}
+main #main-content {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main #main-content #landing-page-presentation {
+  width: 100%;
+  height: 800px;
+}
+main #main-content #landing-page-presentation .swiper {
+  width: 100%;
+  height: 800px;
+  overflow: hidden;
+  position: relative;
+  background-attachment: fixed;
+}
+main #main-content #landing-page-presentation .swiper img {
+  width: 100%;
+  height: 800px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+main #main-content #landing-page-presentation .swiper .swiper-pagination-bullet-active {
+  background-color: #FFDE59;
+}
+main #main-content #landing-page-presentation .text {
+  display: block;
+  margin-left: 0;
+  position: absolute;
+  z-index: 10;
+  top: 300px;
+  margin-left: 10%;
+  will-change: transform;
+  transition: transform 0.2s ease-out;
+}
+main #main-content #landing-page-presentation .text h1 {
+  font-size: 50px;
+  color: #F6F6F6;
+  font-size: 5rem;
+  font-family: "The Seasons";
+  line-height: 100px;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 40px;
+  padding: 10px 20px;
+}
+main #main-content #landing-page-presentation .text h1 span {
+  color: #ff7b3d;
+}
+main #main-content #landing-page-presentation .text #read-more {
+  text-decoration: none;
+  color: #F6F6F6;
+  font-size: 20px;
+  font-weight: 500;
+  background-color: transparent;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px 20px;
+  border: 2px solid #F6F6F6;
+  transition: background-color 0.3s;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+main #main-content #landing-page-presentation .text #read-more:hover {
+  background-color: #F6F6F6;
+  color: #333;
+}
+main #main-content .section-left {
+  flex-direction: row;
+}
+main #main-content .section-left .text {
+  margin-left: 10% !important;
+  padding-right: 80px;
+  box-sizing: border-box;
+}
+main #main-content .section-left .title-section {
+  font-size: 2em;
+  text-align: center;
+  font-family: "Roboto Flex", sans-serif;
+  color: #333;
+  text-decoration: none;
+  width: 100%;
+  margin: 0;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main #main-content .section-left .title-section::before {
+  content: "";
+  flex: 1;
+  height: 2px;
+  background-color: #333;
+  display: block;
+  position: relative;
+  margin-right: 1rem;
+}
+main #main-content .section-left ul {
+  width: 100%;
+}
+main #main-content .section-left ul li {
+  width: 100%;
+  text-align: right;
+  font-size: 1.2rem;
+  color: #333;
+  font-family: "Roboto Flex", sans-serif;
+  line-height: 2rem;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  align-items: center;
+}
+main #main-content .section-left ul li i {
+  margin-left: 10px;
+  color: #ff7b3d;
+}
+main #main-content .section-right {
+  flex-direction: row-reverse;
+}
+main #main-content .section-right .text {
+  margin-right: 10% !important;
+  padding-left: 80px;
+}
+main #main-content .section-right .title-section {
+  font-size: 2em;
+  text-align: center;
+  font-family: "Roboto Flex", sans-serif;
+  color: #333;
+  text-decoration: none;
+  width: 100%;
+  margin: 0;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main #main-content .section-right .title-section::after {
+  content: "";
+  flex: 1;
+  height: 2px;
+  background-color: #333;
+  display: block;
+  position: relative;
+  margin-left: 1rem;
+}
+main #main-content .section-right ul {
+  width: 100%;
+}
+main #main-content .section-right ul li {
+  width: 100%;
+  text-align: left;
+  font-size: 1.2rem;
+  color: #333;
+  font-family: "Roboto Flex", sans-serif;
+  line-height: 2rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+main #main-content .section-right ul li i {
+  margin-right: 10px;
+  color: #ff7b3d;
+}
+main #main-content .advantages {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+main #main-content .advantages .text {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+main #main-content .advantages .text h2 {
+  font-size: 2rem;
+  color: #333;
+  font-family: "Roboto Flex", sans-serif;
+  text-align: left;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+main #main-content .advantages .text p {
+  font-size: 1.2rem;
+  color: #333;
+  font-family: "Roboto Flex", sans-serif;
+  line-height: 2rem;
+  text-align: justify;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+main #main-content .advantages .image {
+  width: 100%;
+  height: 470px;
+  overflow: hidden;
+  background-color: red;
+}
+main #main-content .advantages .image .parallax-bg {
+  width: 100%;
+  height: calc(100% + 120px);
+  background-size: cover;
+  background-position: center center;
+}
+main .flat-section {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .flat-section .text {
+  width: 100%;
+}
+main .flat-section .text h2 {
+  font-size: 3rem;
+  text-align: center;
+  font-family: "Roboto Flex", sans-serif;
+  color: #333;
+  text-decoration: none;
+  width: 100%;
+  margin: 0;
+  margin-bottom: 2rem;
+}
+main .flat-section .text p {
+  width: 100%;
+  font-size: 1.2rem;
+  color: #333;
+  font-family: "Roboto Flex", sans-serif;
+  line-height: 2rem;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+main .flat-section .flat-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-flow: dense;
+  grid-gap: 20px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  padding: 0 10%;
+}
+main .flat-section .flat-list .flat-item {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  box-sizing: border-box;
+  background-color: #F6F6F6;
+  transition: all 0.3s ease 0s;
+}
+main .flat-section .flat-list .flat-item .image {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+main .flat-section .flat-list .flat-item h3 {
+  font-size: 1.5rem;
+  color: #333;
+  font-family: "Roboto Flex", sans-serif;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+main .flat-section .flat-list .flat-item p {
+  font-size: 1rem;
+  color: #CD4D13;
+  font-family: "Roboto Flex", sans-serif;
+  line-height: 2rem;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+main .flat-section .flat-list .flat-item:hover {
+  transform: scale(1.03);
+}
+main .flat-section .view-more {
+  margin-block: 30px;
+  text-decoration: none;
+  color: #F6F6F6;
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: #ff7b3d;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1rem 1.5rem;
+  transition: background-color 0.3s;
+}
+main .flat-section .view-more:hover {
+  background-color: #333;
+  color: #F6F6F6;
+}
+
+footer {
+  width: 100%;
+  background-color: #333;
+  padding: 2rem 0;
+}
+footer #footer-content {
+  width: 80%;
+  margin: auto;
+  color: #F6F6F6;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+footer #footer-content .footer-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  width: 100%;
+}
+footer #footer-content .footer-div a {
+  text-decoration: none;
+  color: #F6F6F6;
+  transition: color 0.3s;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+footer #footer-content .footer-div a:hover {
+  transition: all 0.3s ease 0s;
+  color: #ff7b3d;
+}
+footer #footer-content .footer-div a:hover img {
+  filter: invert(38%) sepia(88%) saturate(1301%) hue-rotate(0deg) brightness(96%) contrast(104%);
+}
+footer #footer-content .footer-div a img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
+}
+footer #footer-content .footer-div p {
+  font-family: "Roboto Flex", sans-serif;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+}/*# sourceMappingURL=style.css.map */
