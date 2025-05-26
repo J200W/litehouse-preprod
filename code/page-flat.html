@@ -20,9 +20,10 @@
             <div id="header-top">
                 <div id="header-top-left">
                     <p>
-                        <a href="#">
+                        <a target="_blank" rel="noopener noreferrer"
+                            href="http://maps.google.com/maps?q=Plot%2030%20Unique%20Estate,%20Mubarak%20Bus%20Stop,%20Akute,%20Ogun,%20Nigeria">
                             <img src="../location.png" alt="location icon">
-                            1234 Lite House St, Lagos
+                            Plot 30 Unique Estate, Mubarak Bus Stop, Akute, Ogun, Nigeria
                         </a>
                     </p>
                 </div>
@@ -48,15 +49,37 @@
                 </a>
                 <nav id="site-navigation" role="navigation">
                     <ul id="primary-menu">
+                        <li class="menu-item"><a href="page.html">Home</a></li>
                         <li class="menu-item menu-item-has-children">
                             <a href="#">Properties</a>
                             <ul class="sub-menu">
-                                <li class="menu-item"><a href="page-rooms.html">Rooms</a></li>
+
+                                <li class="menu-item"><a href="page-flat-list.html">Rooms</a></li>
                                 <li class="menu-item"><a href="page-land.html">Land</a></li>
                             </ul>
                         </li>
                         <li class="menu-item"><a href="page-about.html">About</a></li>
-                        <li class="menu-item"><a href="page-gallery.html">Gallery</a></li>
+                        <li class="menu-item contact"><a href="page-contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <button id="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                    <i aria-hidden="true" class="fa fa-bars"></i>
+                </button>
+            </div>
+            <div id="header-responsive">
+                <nav id="site-navigation-responsive" role="navigation">
+                    <ul id="primary-menu">
+                        <li class="menu-item"><a href="page.html">Home</a></li>
+                        <li class="menu-item-has-children">
+                            <button href="#">Properties
+                                <i aria-hidden="true" class="fa fa-caret-down"></i>
+                            </button>
+                            <ul class="sub-menu-responsive">
+                                <li class="menu-item"><a href="page-flat-list.html">Rooms</a></li>
+                                <li class="menu-item"><a href="page-land.html">Land</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item"><a href="page-about.html">About</a></li>
                         <li class="menu-item contact"><a href="page-contact.html">Contact</a></li>
                     </ul>
                 </nav>
@@ -67,8 +90,195 @@
     <!-- MAIN CONTENT -->
 
     <main>
-        <div id="main-content" class="landing-page">
-            
+        <div id="main-content" class="flat-page">
+            <div id="pop-up-background">
+                <button>
+                    <i aria-hidden="true" class="fa fa-times"></i>
+                </button>
+                <div class="pop-up swiper">
+                    <div class="swiper-wrapper">
+                        <div class="pop-up-item swiper-slide">
+                            <img src="../houses/Abuja1-1.jpeg" alt="Flat 1">
+                        </div>
+                        <div class="pop-up-item swiper-slide">
+                            <img src="../houses/Abuja1-3.jpeg" alt="Flat 1">
+                        </div>
+                        <div class="pop-up-item swiper-slide">
+                            <img src="../houses/Abuja2-6.JPG" alt="Flat 1">
+                        </div>
+                        <div class="pop-up-item swiper-slide">
+                            <img src="../houses/Abuja3-6.jpeg" alt="Flat 1">
+                        </div>
+                        <div class="pop-up-item swiper-slide">
+                            <img src="../houses/Abuja4-1.jpg" alt="Flat 1">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flat-image-list swiper">
+                <div class="swiper-wrapper">
+                    <div class="flat-item swiper-slide zoom-item">
+                        <img src="../houses/Abuja1-1.jpeg" alt="Flat 1">
+                        <div class="middle">
+                            <i aria-hidden="true" class="fa fa-search-plus"></i>
+                        </div>
+                    </div>
+                    <div class="flat-item swiper-slide zoom-item">
+                        <img src="../houses/Abuja1-3.jpeg" alt="Flat 1">
+                        <div class="middle">
+                            <i aria-hidden="true" class="fa fa-search-plus"></i>
+                        </div>
+                    </div>
+                    <div class="flat-item swiper-slide zoom-item">
+                        <img src="../houses/Abuja2-6.JPG" alt="Flat 2">
+                        <div class="middle">
+                            <i aria-hidden="true" class="fa fa-search-plus"></i>
+                        </div>
+                    </div>
+                    <div class="flat-item swiper-slide zoom-item">
+                        <img src="../houses/Abuja3-6.jpeg" alt="Flat 3">
+                        <div class="middle">
+                            <i aria-hidden="true" class="fa fa-search-plus"></i>
+                        </div>
+                    </div>
+                    <div class="flat-item swiper-slide zoom-item">
+                        <img src="../houses/Abuja4-1.jpg" alt="Flat 4">
+                        <div class="middle">
+                            <i aria-hidden="true" class="fa fa-search-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next flat-image-list-btn-next"></div>
+                <div class="swiper-button-prev flat-image-list-btn-prev"></div>
+            </div>
+            <section id="flat-card">
+                <div class="flat-card-image">
+                    <img src="../houses/Abuja1-3.jpeg" alt="Flat 1">
+                </div>
+                <div class="flat-card-details">
+                    <h1>Flat 1</h1>
+                    <p class="price">₦ 2,000,000</p>
+                    <div class="flat-card-features">
+                        <div class="flat-card-feat">
+                            <i aria-hidden="true" class="fa fa-bed"></i>
+                            <p>2 beds</p>
+                        </div>
+                        <div class="flat-card-feat">
+                            <i aria-hidden="true" class="fa fa-bath"></i>
+                            <p>2 baths</p>
+                        </div>
+                        <div class="flat-card-feat">
+                            <i aria-hidden="true" class="fa fa-arrows-alt"></i>
+                            <p>1200 sqft</p>
+                        </div>
+                    </div>
+                    <a href="#contact-us">Contact Us</a>
+                </div>
+            </section>
+            <div class="flat-info">
+                <section class="description collapse">
+                    <a href="#" class="collapse-header open">
+                        <h4>Description</h4>
+                        <i aria-hidden="true" class="fa fa-angle-up"></i>
+                    </a>
+                    <p class="collapse-content open">
+                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                        alteration in some form, by injected humour, or randomised words which don’t look even slightly
+                        believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn’t
+                        anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the
+                        Internet
+                        tend to repeat predefined chunks as necessary, making this the first true generator on the
+                        Internet.
+
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                        laudantium,
+                        totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
+                        dicta sunt explicabo.
+                    </p>
+                </section>
+                <section class="amenities collapse">
+                    <a href="#" class="collapse-header open">
+                        <h4>Amenities</h4>
+                        <i aria-hidden="true" class="fa fa-angle-up"></i>
+                    </a>
+                    <div class="collapse-content open">
+                        <ul class="advantages">
+                            <li>
+                                <i aria-hidden="true" class="fa fa-check-circle"></i>
+                                Air conditioning
+                            </li>
+                            <li>
+                                <i aria-hidden="true" class="fa fa-check-circle"></i>
+                                Window covering
+                            </li>
+                            <li>
+                                <i aria-hidden="true" class="fa fa-check-circle"></i>
+                                Central heating
+                            </li>
+                            <li>
+                                <i aria-hidden="true" class="fa fa-check-circle"></i>
+                                Car parking
+                            </li>
+                            <li>
+                                <i aria-hidden="true" class="fa fa-check-circle"></i>
+                                Alarm system
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="property-video collapse">
+                    <a href="#" class="collapse-header open">
+                        <h4>Video presentation</h4>
+                        <i aria-hidden="true" class="fa fa-angle-up"></i>
+                    </a>
+                    <div class="collapse-content open">
+                        <iframe src="https://www.youtube.com/embed/ec_fXMrD7Ow?si=YFF6W9ItUmjrEy5T&mute=1&rel=0"
+                            title="Home tour" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen mute></iframe>
+                    </div>
+                </section>
+                <section class="gallery collapse">
+                    <a href="#" class="collapse-header open">
+                        <h4>Gallery</h4>
+                        <i aria-hidden="true" class="fa fa-angle-up"></i>
+                    </a>
+                    <div class="collapse-content open">
+                        <div class="image-grid">
+                            <div class="zoom-item">
+                                <img src="../houses/Abuja1-1.jpeg" alt="" data-position-img="0">
+                                <div class="middle">
+                                    <i aria-hidden="true" class="fa fa-search-plus"></i>
+                                </div>
+                            </div>
+                            <div class="zoom-item">
+                                <img src="../houses/Abuja1-3.jpeg" alt="" data-position-img="1">
+                                <div class="middle">
+                                    <i aria-hidden="true" class="fa fa-search-plus"></i>
+                                </div>
+                            </div>
+                            <div class="zoom-item">
+                                <img src="../houses/Abuja2-6.JPG" alt="" data-position-img="2">
+                                <div class="middle">
+                                    <i aria-hidden="true" class="fa fa-search-plus"></i>
+                                </div>
+                            </div>
+                            <div class="zoom-item">
+                                <img src="../houses/Abuja3-6.jpeg" alt="" data-position-img="3">
+                                <div class="middle">
+                                    <i aria-hidden="true" class="fa fa-search-plus"></i>
+                                </div>
+                            </div>
+                            <div class="zoom-item">
+                                <img src="../houses/Abuja4-1.jpg" alt="" data-position-img="4">
+                                <div class="middle">
+                                    <i aria-hidden="true" class="fa fa-search-plus"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
         </div>
     </main>
 
@@ -82,9 +292,10 @@
             </div>
             <div class="footer-div">
                 <p class="contact-details">
-                    <a href="#">
+                    <a target="_blank" rel="noopener noreferrer"
+                        href="http://maps.google.com/maps?q=Plot%2030%20Unique%20Estate,%20Mubarak%20Bus%20Stop,%20Akute,%20Ogun,%20Nigeria">
                         <img src="../location.png" alt="location icon">
-                        1234 Lite House St, Lagos
+                        Plot 30 Unique Estate, Mubarak Bus Stop, Akute, Ogun, Nigeria
                     </a>
                 </p>
             </div>
@@ -111,6 +322,8 @@
 <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
     crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="http://www.youtube.com/player_api"></script>
+
 <script src="./script.js"></script>
 
 </html>

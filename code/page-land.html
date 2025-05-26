@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lite House</title>
     <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./init.css">
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -20,9 +20,10 @@
             <div id="header-top">
                 <div id="header-top-left">
                     <p>
-                        <a href="#">
+                        <a target="_blank" rel="noopener noreferrer"
+                            href="http://maps.google.com/maps?q=Plot%2030%20Unique%20Estate,%20Mubarak%20Bus%20Stop,%20Akute,%20Ogun,%20Nigeria">
                             <img src="../location.png" alt="location icon">
-                            1234 Lite House St, Lagos
+                            Plot 30 Unique Estate, Mubarak Bus Stop, Akute, Ogun, Nigeria
                         </a>
                     </p>
                 </div>
@@ -48,15 +49,37 @@
                 </a>
                 <nav id="site-navigation" role="navigation">
                     <ul id="primary-menu">
+                        <li class="menu-item"><a href="page.html">Home</a></li>
                         <li class="menu-item menu-item-has-children">
                             <a href="#">Properties</a>
                             <ul class="sub-menu">
-                                <li class="menu-item"><a href="page-rooms.html">Rooms</a></li>
+
+                                <li class="menu-item"><a href="page-flat-list.html">Rooms</a></li>
                                 <li class="menu-item"><a href="page-land.html">Land</a></li>
                             </ul>
                         </li>
                         <li class="menu-item"><a href="page-about.html">About</a></li>
-                        <li class="menu-item"><a href="page-gallery.html">Gallery</a></li>
+                        <li class="menu-item contact"><a href="page-contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <button id="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                    <i aria-hidden="true" class="fa fa-bars"></i>
+                </button>
+            </div>
+            <div id="header-responsive">
+                <nav id="site-navigation-responsive" role="navigation">
+                    <ul id="primary-menu">
+                        <li class="menu-item"><a href="page.html">Home</a></li>
+                        <li class="menu-item-has-children">
+                            <button href="#">Properties
+                                <i aria-hidden="true" class="fa fa-caret-down"></i>
+                            </button>
+                            <ul class="sub-menu-responsive">
+                                <li class="menu-item"><a href="page-flat-list.html">Rooms</a></li>
+                                <li class="menu-item"><a href="page-land.html">Land</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item"><a href="page-about.html">About</a></li>
                         <li class="menu-item contact"><a href="page-contact.html">Contact</a></li>
                     </ul>
                 </nav>
@@ -67,8 +90,166 @@
     <!-- MAIN CONTENT -->
 
     <main>
-        <div id="main-content" class="landing-page">
-            
+        <div id="main-content" class="land-page">
+            <section id="top-section" style="background-image: url('../land/land5.webp');">
+                <h1>Lite House Land</h1>
+                <p>Your Ground, Your Vision</p>
+            </section>
+            <div id="pop-up-background">
+                <button>
+                    <i aria-hidden="true" class="fa fa-times"></i>
+                </button>
+                <div class="pop-up swiper">
+                    <div class="swiper-wrapper">
+                        <div class="pop-up-item swiper-slide">
+                            <img src="../land/land1.webp" alt="land 1">
+                        </div>
+                        <div class="pop-up-item swiper-slide">
+                            <img src="../land/land2.webp" alt="land 1">
+                        </div>
+                        <div class="pop-up-item swiper-slide">
+                            <img src="../land/land3.webp" alt="land 1">
+                        </div>
+                        <div class="pop-up-item swiper-slide">
+                            <img src="../land/land4.webp" alt="land 1">
+                        </div>
+                        <div class="pop-up-item swiper-slide">
+                            <img src="../land/land5.webp" alt="land 1">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="land-image-list swiper">
+                <div class="swiper-wrapper">
+                    <div class="land-item swiper-slide zoom-item">
+                        <img src="../land/land1.webp" alt="land 1">
+                        <div class="middle">
+                            <i aria-hidden="true" class="fa fa-search-plus"></i>
+                        </div>
+                    </div>
+                    <div class="land-item swiper-slide zoom-item">
+                        <img src="../land/land2.webp" alt="land 1">
+                        <div class="middle">
+                            <i aria-hidden="true" class="fa fa-search-plus"></i>
+                        </div>
+                    </div>
+                    <div class="land-item swiper-slide zoom-item">
+                        <img src="../land/land3.webp" alt="land 2">
+                        <div class="middle">
+                            <i aria-hidden="true" class="fa fa-search-plus"></i>
+                        </div>
+                    </div>
+                    <div class="land-item swiper-slide zoom-item">
+                        <img src="../land/land4.webp" alt="land 3">
+                        <div class="middle">
+                            <i aria-hidden="true" class="fa fa-search-plus"></i>
+                        </div>
+                    </div>
+                    <div class="land-item swiper-slide zoom-item">
+                        <img src="../land/land5.webp" alt="land 4">
+                        <div class="middle">
+                            <i aria-hidden="true" class="fa fa-search-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next land-image-list-btn-next"></div>
+                <div class="swiper-button-prev land-image-list-btn-prev"></div>
+            </div>
+            <section id="land-info">
+                <div id="land-info-top">
+                    <p id="size-number">
+                        <img src="../herbe.png" alt="grass">
+                        <span>3,000</span> sqft
+                    </p>
+                </div>
+                <p id="land-info-text">
+                    Whether you’re a first-time buyer or a seasoned investor, our listings come with verified
+                    documents, transparent pricing, and support every step of the way.
+                    Own land with peace of mind: Lite House makes it simple, secure, and smart.<br><br>
+                    Nestled in a rapidly developing area, this plot of land offers the perfect balance between urban
+                    convenience and peaceful living. Whether you're looking to build your dream home or invest in a
+                    high-growth zone, this location provides strong infrastructure access, proximity to major roads, and
+                    verified legal documents. <br><br>The flat terrain and ready-to-build status make it ideal for
+                    residential
+                    or commercial development. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis
+                    harum delectus ab sapiente non assumenda veritatis modi repellat soluta reiciendis! Modi excepturi
+                    distinctio hic minus quos consequatur accusantium magni velit. <br><br>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis
+                    harum delectus ab sapiente non assumenda veritatis modi repellat soluta reiciendis! Modi excepturi
+                    distinctio hic minus quos consequatur accusantium magni velit. <br><br>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis
+                    harum delectus ab sapiente non assumenda veritatis modi repellat soluta reiciendis! Modi excepturi
+                    distinctio hic minus quos consequatur accusantium magni velit.
+                </p>
+            </section>
+            <section id="faq">
+                <div class="collapse">
+                    <a href="#" class="collapse-header">
+                        <h4>How do I schedule a site visit to inspect the land?</h4>
+                        <i aria-hidden="true" class="fa fa-angle-up"></i>
+                    </a>
+                    <div class="collapse-content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus optio repudiandae suscipit
+                            cupiditate rem, impedit fuga accusamus doloribus labore officiis ipsa voluptates! Id saepe
+                            repudiandae suscipit distinctio a neque in?</p>
+                    </div>
+                </div>
+                <div class="collapse">
+                    <a href="#" class="collapse-header">
+                        <h4>What types of land do you offer (residential, commercial, agricultural, etc.)?</h4>
+                        <i aria-hidden="true" class="fa fa-angle-up"></i>
+                    </a>
+                    <div class="collapse-content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus optio repudiandae suscipit
+                            cupiditate rem, impedit fuga accusamus doloribus labore officiis ipsa voluptates! Id saepe
+                            repudiandae suscipit distinctio a neque in?</p>
+                    </div>
+                </div>
+                <div class="collapse">
+                    <a href="#" class="collapse-header">
+                        <h4>How do I inquire about land for sale?</h4>
+                        <i aria-hidden="true" class="fa fa-angle-up"></i>
+                    </a>
+                    <div class="collapse-content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus optio repudiandae suscipit
+                            cupiditate rem, impedit fuga accusamus doloribus labore officiis ipsa voluptates! Id saepe
+                            repudiandae suscipit distinctio a neque in?</p>
+                    </div>
+                </div>
+                <div class="collapse">
+                    <a href="#" class="collapse-header">
+                        <h4>Are land documents verified before listing?</h4>
+                        <i aria-hidden="true" class="fa fa-angle-up"></i>
+                    </a>
+                    <div class="collapse-content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus optio repudiandae suscipit
+                            cupiditate rem, impedit fuga accusamus doloribus labore officiis ipsa voluptates! Id saepe
+                            repudiandae suscipit distinctio a neque in?</p>
+                    </div>
+                </div>
+                <div class="collapse">
+                    <a href="#" class="collapse-header">
+                        <h4>Can I visit the land before purchasing?</h4>
+                        <i aria-hidden="true" class="fa fa-angle-up"></i>
+                    </a>
+                    <div class="collapse-content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus optio repudiandae suscipit
+                            cupiditate rem, impedit fuga accusamus doloribus labore officiis ipsa voluptates! Id saepe
+                            repudiandae suscipit distinctio a neque in?</p>
+                    </div>
+                </div>
+                <div class="collapse">
+                    <a href="#" class="collapse-header">
+                        <h4>Do you assist with land transfer or registration?</h4>
+                        <i aria-hidden="true" class="fa fa-angle-up"></i>
+                    </a>
+                    <div class="collapse-content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus optio repudiandae suscipit
+                            cupiditate rem, impedit fuga accusamus doloribus labore officiis ipsa voluptates! Id saepe
+                            repudiandae suscipit distinctio a neque in?</p>
+                    </div>
+                </div>
+            </section>
         </div>
     </main>
 
@@ -82,9 +263,10 @@
             </div>
             <div class="footer-div">
                 <p class="contact-details">
-                    <a href="#">
+                    <a target="_blank" rel="noopener noreferrer"
+                        href="http://maps.google.com/maps?q=Plot%2030%20Unique%20Estate,%20Mubarak%20Bus%20Stop,%20Akute,%20Ogun,%20Nigeria">
                         <img src="../location.png" alt="location icon">
-                        1234 Lite House St, Lagos
+                        Plot 30 Unique Estate, Mubarak Bus Stop, Akute, Ogun, Nigeria
                     </a>
                 </p>
             </div>
@@ -111,6 +293,9 @@
 <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
     crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="
+https://www.flornoyferri.com/wp-content/themes/flornoy/js/jquery.spincrement.min.js?ver=1.0.0"
+    id="spincrement-js-js"></script>
 <script src="./script.js"></script>
 
 </html>

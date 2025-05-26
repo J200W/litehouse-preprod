@@ -6,9 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lite House</title>
     <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css"
+        integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+        crossorigin="" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./init.css">
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -20,9 +23,10 @@
             <div id="header-top">
                 <div id="header-top-left">
                     <p>
-                        <a href="#">
+                        <a target="_blank" rel="noopener noreferrer"
+                            href="http://maps.google.com/maps?q=Plot%2030%20Unique%20Estate,%20Mubarak%20Bus%20Stop,%20Akute,%20Ogun,%20Nigeria">
                             <img src="../location.png" alt="location icon">
-                            1234 Lite House St, Lagos
+                            Plot 30 Unique Estate, Mubarak Bus Stop, Akute, Ogun, Nigeria
                         </a>
                     </p>
                 </div>
@@ -48,22 +52,43 @@
                 </a>
                 <nav id="site-navigation" role="navigation">
                     <ul id="primary-menu">
+                        <li class="menu-item"><a href="page.html">Home</a></li>
                         <li class="menu-item menu-item-has-children">
                             <a href="#">Properties</a>
                             <ul class="sub-menu">
-                                <li class="menu-item"><a href="page-rooms.html">Rooms</a></li>
+
+                                <li class="menu-item"><a href="page-flat-list.html">Rooms</a></li>
                                 <li class="menu-item"><a href="page-land.html">Land</a></li>
                             </ul>
                         </li>
                         <li class="menu-item"><a href="page-about.html">About</a></li>
-                        <li class="menu-item"><a href="page-gallery.html">Gallery</a></li>
+                        <li class="menu-item contact"><a href="page-contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <button id="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                    <i aria-hidden="true" class="fa fa-bars"></i>
+                </button>
+            </div>
+            <div id="header-responsive">
+                <nav id="site-navigation-responsive" role="navigation">
+                    <ul id="primary-menu">
+                        <li class="menu-item"><a href="page.html">Home</a></li>
+                        <li class="menu-item-has-children">
+                            <button href="#">Properties
+                                <i aria-hidden="true" class="fa fa-caret-down"></i>
+                            </button>
+                            <ul class="sub-menu-responsive">
+                                <li class="menu-item"><a href="page-flat-list.html">Rooms</a></li>
+                                <li class="menu-item"><a href="page-land.html">Land</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item"><a href="page-about.html">About</a></li>
                         <li class="menu-item contact"><a href="page-contact.html">Contact</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
-
     <!-- MAIN CONTENT -->
 
     <main>
@@ -95,92 +120,130 @@
                     <div class="swiper-pagination landing-page-pagination"></div>
                 </div>
             </div>
+            <div id="advantages">
+                <section id="welcome" class="section-left advantages">
+                    <div class="text">
+                        <h2 class="title-section">Welcome to Lite House</h2>
+                        <p>Whether you're looking for a short let or a long stay, Lite House offers premium homes and
+                            land
+                            across Nigeria’s top locations. From business trips to extended relocations, enjoy trusted
+                            listings, seamless booking, and personalized support so you can focus on living, not
+                            searching.
+                        </p>
+                    </div>
+                    <div class="image">
+                        <div class="parallax-bg" style="background-image: url('../houses/Abuja2-1.png');"></div>
+                    </div>
+                </section>
+                <section class="section-right advantages">
+                    <div class="text">
+                        <h2 class="title-section">A Better Way to Stay</h2>
+                        <ul>
+                            <li><i aria-hidden="true" class="fa fa-check-circle"></i>
+                                Cleanning & Maintenance
+                            </li>
+                            <li><i aria-hidden="true" class="fa fa-check-circle"></i>
+                                24/7 Security with CCTV
+                            </li>
+                            <li><i aria-hidden="true" class="fa fa-check-circle"></i>
+                                Hot water supply
+                            </li>
+                            <li><i aria-hidden="true" class="fa fa-check-circle"></i>
+                                Parking space
+                            </li>
+                            <li><i aria-hidden="true" class="fa fa-check-circle"></i>
+                                10 minutes drive from Lagos
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="image">
+                        <div class="parallax-bg" style="background-image: url('../houses/Abuja2-7.jpg');"></div>
+                    </div>
+                </section>
+                <section class="section-left advantages">
+                    <div class="text">
+                        <h2 class="title-section">Made For You</h2>
+                        <ul>
+                            <li><i aria-hidden="true" class="fa fa-check-circle"></i>
+                                Business travelers
+                            </li>
+                            <li><i aria-hidden="true" class="fa fa-check-circle"></i>
+                                Expats & returning residents
+                            </li>
+                            <li><i aria-hidden="true" class="fa fa-check-circle"></i>
+                                Investors looking for short-term land leases
+                            </li>
+                            <li><i aria-hidden="true" class="fa fa-check-circle"></i>
+                                Locals seeking city breaks
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="image">
+                        <div class="parallax-bg" style="background-image: url('../houses/Abuja2-3.jpg');"></div>
+                    </div>
+                </section>
+            </div>
 
-            <section id="welcome" class="section-left advantages">
-                <div class="text">
-                    <h2 class="title-section">Welcome to Lite House</h2>
-                    <p>Whether you're looking for a short let or a long stay, Lite House offers premium homes and land
-                        across Nigeria’s top locations. From business trips to extended relocations, enjoy trusted
-                        listings, seamless booking, and personalized support so you can focus on living, not searching.
-                    </p>
-                </div>
-                <div class="image">
-                    <div class="parallax-bg" style="background-image: url('../houses/Abuja2-1.png');"></div>
-                </div>
-            </section>
-            <section class="section-right advantages">
-                <div class="text">
-                    <h2 class="title-section">A Better Way to Stay</h2>
-                    <ul>
-                        <li><i aria-hidden="true" class="fa fa-check-circle"></i>
-                            Cleanning & Maintenance
-                        </li>
-                        <li><i aria-hidden="true" class="fa fa-check-circle"></i>
-                            24/7 Security with CCTV
-                        </li>
-                        <li><i aria-hidden="true" class="fa fa-check-circle"></i>
-                            Hot water supply
-                        </li>
-                        <li><i aria-hidden="true" class="fa fa-check-circle"></i>
-                            Parking space
-                        </li>
-                        <li><i aria-hidden="true" class="fa fa-check-circle"></i>
-                            10 minutes drive from Lagos
-                        </li>
-                    </ul>
-                </div>
-                <div class="image">
-                    <div class="parallax-bg" style="background-image: url('../houses/Abuja2-7.jpg');"></div>
-                </div>
-            </section>
-            <section class="section-left advantages">
-                <div class="text">
-                    <h2 class="title-section">Made For You</h2>
-                    <ul>
-                        <li><i aria-hidden="true" class="fa fa-check-circle"></i>
-                            Business travelers
-                        </li>
-                        <li><i aria-hidden="true" class="fa fa-check-circle"></i>
-                            Expats & returning residents
-                        </li>
-                        <li><i aria-hidden="true" class="fa fa-check-circle"></i>
-                            Investors looking for short-term land leases
-                        </li>
-                        <li><i aria-hidden="true" class="fa fa-check-circle"></i>
-                            Locals seeking city breaks
-                        </li>
-                    </ul>
-                </div>
-                <div class="image">
-                    <div class="parallax-bg" style="background-image: url('../houses/Abuja2-3.jpg');"></div>
-                </div>
-            </section>
 
             <!-- FLAT FOR RENT OR STAY -->
-             
+
             <section class="flat-section">
                 <div class="text">
                     <h2>Available Properties</h2>
-                    <p>From weekend stays to extended living find your perfect fit.</p>
+                    <h3>From weekend stays to extended living find your perfect fit.</h3>
                 </div>
-                <div class="flat-list">
-                    <a href="page-flat.html" class="flat-item">
-                        <div class="image" style="background-image: url('../houses/Abuja2-9.jpg');"></div>
-                        <h3>Miniflat 1</h3>
-                        <p>₦ 1,400,000</p>
-                    </a>
-                    <a href="page-flat.html" class="flat-item">
-                        <div class="image" style="background-image: url('../houses/Abuja3-6.jpeg');"></div>
-                        <h3>2 Bedrooms flat</h3>
-                        <p>₦ 1,700,000</p>
-                    </a>
-                    <a href="page-flat.html" class="flat-item">
-                        <div class="image" style="background-image: url('../houses/Abuja1-3.jpeg');"></div>
-                        <h3>3 Bedrooms flat</h3>
-                        <p>₦ 2,300,000</p>
-                    </a>
+                <div class="flat-list swiper">
+                    <div class="swiper-wrapper">
+                        <div class="flat-item swiper-slide">
+                            <img src="../houses/Abuja1-3.jpeg" alt="Flat 1">
+                            <h4>Flat 1</h4>
+                            <div class="flat-item-bottom">
+                                <p>₦ 100,000/month</p>
+                                <a href="page-flat.html">Book now</a>
+                            </div>
+                        </div>
+                        <div class="flat-item swiper-slide">
+                            <img src="../houses/Abuja2-6.JPG" alt="Flat 2">
+                            <h4>Flat 2</h4>
+                            <div class="flat-item-bottom">
+                                <p>₦ 120,000/month</p>
+                                <a href="page-flat.html">Book now</a>
+                            </div>
+                        </div>
+                        <div class="flat-item swiper-slide">
+                            <img src="../houses/Abuja3-6.jpeg" alt="Flat 3">
+                            <h4>Flat 3</h4>
+                            <div class="flat-item-bottom">
+                                <p>₦ 150,000/month</p>
+                                <a href="page-flat.html">Book now</a>
+                            </div>
+                        </div>
+                        <div class="flat-item swiper-slide">
+                            <img src="../houses/Abuja4-1.jpg" alt="Flat 4">
+                            <h4>Flat 4</h4>
+                            <div class="flat-item-bottom">
+                                <p>₦ 180,000/month</p>
+                                <a href="page-flat.html">Book now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination flat-list-pagination"></div>
+                    <div class="swiper-button-next flat-list-btn-next"></div>
+                    <div class="swiper-button-prev flat-list-btn-prev"></div>
                 </div>
-                <a href="#" class="view-more">View more</a>
+                <a href="page-flat-list.html" class="view-more">View more</a>
+            </section>
+            <section class="land-section">
+                <div class="land-section-item left" style="background-image: url('../land/land1.webp');"></div>
+                <div class="land-section-item right">
+                    <h2>Secure your piece of Nigeria</h2>
+                    <h3>Own a piece of tomorrow and start building your legacy today.</h3>
+                    <p>Looking to build, invest, or secure a long-term asset ? Lite House offers access to carefully
+                        vetted
+                        plots of land in Nigeria’s most promising areas from urban developments to emerging suburban
+                        hubs.</p>
+                    <a href="page-land.html" class="view-more">See available land</a>
+                </div>
             </section>
         </div>
     </main>
@@ -194,15 +257,15 @@
                 <p>All rights reserved</p>
             </div>
             <div class="footer-div">
-                <p class="contact-details">
-                    <a href="#">
-                        <img src="../location.png" alt="location icon">
-                        1234 Lite House St, Lagos
-                    </a>
-                </p>
+                <a href="#">Privacy Policy</a>
             </div>
             <div class="footer-div">
-                <a href="#">Privacy Policy</a>
+                <p class="contact-details">
+                    <a target="_blank" rel="noopener noreferrer" href="http://maps.google.com/maps?q=Plot%2030%20Unique%20Estate,%20Mubarak%20Bus%20Stop,%20Akute,%20Ogun,%20Nigeria">
+                        <img src="../location.png" alt="location icon">
+                        Plot 30 Unique Estate, Mubarak Bus Stop, Akute, Ogun, Nigeria
+                    </a>
+                </p>
             </div>
             <div class="footer-div">
                 <p class="contact-details">
