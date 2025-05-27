@@ -81,6 +81,29 @@ export default function FlatDetail() {
             showPopUp();
         });
 
+        const handleClick = function (e) {
+            e.preventDefault();
+            var $collapseContent = $(this).siblings('.collapse-content');
+            if ($collapseContent.hasClass('open')) {
+                $collapseContent.removeClass('open');
+                $(this).removeClass('open');
+                const $iframe = $collapseContent.children("iframe");
+                if ($iframe) {
+                    let vidUrl = $iframe.attr('src');
+                    $iframe.attr("src", "");
+                    $iframe.attr("src", vidUrl);
+                }
+            }
+            else {
+                $collapseContent.addClass('open');
+                $(this).addClass('open');
+            }
+        }
+
+        // Détache les anciens avant d'en attacher de nouveaux
+        $('.collapse-header').off('click', handleClick);
+        $('.collapse-header').on('click', handleClick);
+
         function showPopUp() {
             $("#pop-up-background").css("display", "flex");
             $("#pop-up-background").on("click", function (e) {
@@ -90,6 +113,11 @@ export default function FlatDetail() {
                 }
             })
         }
+
+        // Nettoyage automatique au démontage
+        return () => {
+            $('.collapse-header').off('click', handleClick);
+        };
     }, [])
 
     return (

@@ -73,7 +73,6 @@ export default function Land() {
             position = parseInt(position) - 1;
             swiperPopUp.slideReset(500);
             swiperPopUp.slideTo(position);
-            console.log(position);
             showPopUp();
         });
 
@@ -97,7 +96,35 @@ export default function Land() {
                 landAnimated = true;
             }
         });
-    }, []);
+
+        const handleClick = function (e) {
+            e.preventDefault();
+            var $collapseContent = $(this).siblings('.collapse-content');
+            if ($collapseContent.hasClass('open')) {
+                $collapseContent.removeClass('open');
+                $(this).removeClass('open');
+                const $iframe = $collapseContent.children("iframe");
+                if ($iframe) {
+                    let vidUrl = $iframe.attr('src');
+                    $iframe.attr("src", "");
+                    $iframe.attr("src", vidUrl);
+                }
+            }
+            else {
+                $collapseContent.addClass('open');
+                $(this).addClass('open');
+            }
+        }
+
+        // Détache les anciens avant d'en attacher de nouveaux
+        $('.collapse-header').off('click', handleClick);
+        $('.collapse-header').on('click', handleClick);
+
+        // Nettoyage automatique au démontage
+        return () => {
+            $('.collapse-header').off('click', handleClick);
+        };
+    });
 
     return (
         <div id="main-content" className="land-page">
