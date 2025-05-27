@@ -1,6 +1,7 @@
 'use client'
 
 import TopSection from "app/(components)/top-section";
+import Link from "next/link";
 import { useEffect } from "react";
 
 export default function FlatList() {
@@ -51,7 +52,7 @@ export default function FlatList() {
                     <h2>Flat 1</h2>
                     <div className="flat-list-item-bottom">
                         <p>₦ 100,000/month</p>
-                        <a href="/flat/detail">Book now</a>
+                        <Link href="/flat/detail">Book now</Link>
                     </div>
                 </div>
                 <div className="flat-list-item">
@@ -59,7 +60,7 @@ export default function FlatList() {
                     <h2>Flat 2</h2>
                     <div className="flat-list-item-bottom">
                         <p>₦ 120,000/month</p>
-                        <a href="/flat/detail">Book now</a>
+                        <Link href="/flat/detail">Book now</Link>
                     </div>
                 </div>
                 <div className="flat-list-item">
@@ -67,7 +68,7 @@ export default function FlatList() {
                     <h2>Flat 3</h2>
                     <div className="flat-list-item-bottom">
                         <p>₦ 150,000/month</p>
-                        <a href="/flat/detail">Book now</a>
+                        <Link href="/flat/detail">Book now</Link>
                     </div>
                 </div>
                 <div className="flat-list-item">
@@ -75,7 +76,7 @@ export default function FlatList() {
                     <h2>Flat 4</h2>
                     <div className="flat-list-item-bottom">
                         <p>₦ 180,000/month</p>
-                        <a href="/flat/detail">Book now</a>
+                        <Link href="/flat/detail">Book now</Link>
                     </div>
                 </div>
                 <div className="flat-list-item">
@@ -83,7 +84,7 @@ export default function FlatList() {
                     <h2>Flat 1</h2>
                     <div className="flat-list-item-bottom">
                         <p>₦ 100,000/month</p>
-                        <a href="/flat/detail">Book now</a>
+                        <Link href="/flat/detail">Book now</Link>
                     </div>
                 </div>
                 <div className="flat-list-item">
@@ -91,7 +92,7 @@ export default function FlatList() {
                     <h2>Flat 2</h2>
                     <div className="flat-list-item-bottom">
                         <p>₦ 120,000/month</p>
-                        <a href="/flat/detail">Book now</a>
+                        <Link href="/flat/detail">Book now</Link>
                     </div>
                 </div>
                 <div className="flat-list-item">
@@ -99,7 +100,7 @@ export default function FlatList() {
                     <h2>Flat 3</h2>
                     <div className="flat-list-item-bottom">
                         <p>₦ 150,000/month</p>
-                        <a href="/flat/detail">Book now</a>
+                        <Link href="/flat/detail">Book now</Link>
                     </div>
                 </div>
                 <div className="flat-list-item">
@@ -107,7 +108,7 @@ export default function FlatList() {
                     <h2>Flat 4</h2>
                     <div className="flat-list-item-bottom">
                         <p>₦ 180,000/month</p>
-                        <a href="/flat/detail">Book now</a>
+                        <Link href="/flat/detail">Book now</Link>
                     </div>
                 </div>
                 <div className="flat-list-item">
@@ -115,7 +116,7 @@ export default function FlatList() {
                     <h2>Flat 1</h2>
                     <div className="flat-list-item-bottom">
                         <p>₦ 100,000/month</p>
-                        <a href="/flat/detail">Book now</a>
+                        <Link href="/flat/detail">Book now</Link>
                     </div>
                 </div>
             </div>

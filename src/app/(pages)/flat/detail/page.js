@@ -1,6 +1,7 @@
 'use client'
 
 import PopupSlider from "app/(components)/popup";
+import Link from "next/link";
 import { useEffect } from "react";
 
 export default function FlatDetail() {
@@ -152,19 +153,19 @@ export default function FlatDetail() {
                             <p>1200 sqft</p>
                         </div>
                     </div>
-                    <a href="/contact">Contact Us</a>
+                    <Link href="/contact">Contact Us</Link>
                 </div>
             </section>
             <div className="flat-info">
                 <section className="description collapse">
-                    <a href="#" className="collapse-header open">
+                    <Link href="#" className="collapse-header open">
                         <h4>Description</h4>
                         <i aria-hidden="true" className="fa fa-angle-up"></i>
-                    </a>
+                    </Link>
                     <p className="collapse-content open">
                         There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                        alteration in some form, by injected humour, or randomised words which don’t look even slightly
-                        believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn’t
+                        alteration in some form, by injected humour, or randomised words which don&apos;t look even slightly
+                        believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn&apos;t
                         anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the
                         Internet
                         tend to repeat predefined chunks as necessary, making this the first true generator on the
@@ -177,10 +178,10 @@ export default function FlatDetail() {
                     </p>
                 </section>
                 <section className="amenities collapse">
-                    <a href="#" className="collapse-header open">
+                    <Link href="#" className="collapse-header open">
                         <h4>Amenities</h4>
                         <i aria-hidden="true" className="fa fa-angle-up"></i>
-                    </a>
+                    </Link>
                     <div className="collapse-content open">
                         <ul className="advantages">
                             <li>
@@ -207,10 +208,10 @@ export default function FlatDetail() {
                     </div>
                 </section>
                 <section className="property-video collapse">
-                    <a href="#" className="collapse-header open">
+                    <Link href="#" className="collapse-header open">
                         <h4>Video presentation</h4>
                         <i aria-hidden="true" className="fa fa-angle-up"></i>
-                    </a>
+                    </Link>
                     <div className="collapse-content open">
                         <iframe src="https://www.youtube.com/embed/ec_fXMrD7Ow?si=YFF6W9ItUmjrEy5T&mute=1&rel=0"
                             title="Home tour" frameBorder="0"
@@ -219,10 +220,10 @@ export default function FlatDetail() {
                     </div>
                 </section>
                 <section className="gallery collapse">
-                    <a href="#" className="collapse-header open">
+                    <Link href="#" className="collapse-header open">
                         <h4>Gallery</h4>
                         <i aria-hidden="true" className="fa fa-angle-up"></i>
-                    </a>
+                    </Link>
                     <div className="collapse-content open">
                         <div className="image-grid">
                             {imageList.map((image, key) => {

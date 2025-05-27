@@ -1,3 +1,4 @@
+import Link from "next/link";
 
 export default function Footer() {
     return (
@@ -8,28 +9,28 @@ export default function Footer() {
                     <p>All rights reserved</p>
                 </div>
                 <div className="footer-div">
-                    <a href="#">Privacy Policy</a>
+                    <Link href="#">Privacy Policy</Link>
                 </div>
                 <div className="footer-div">
                     <p className="contact-details">
-                        <a target="_blank" rel="noopener noreferrer" href="http://maps.google.com/maps?q=Plot%2030%20Unique%20Estate,%20Mubarak%20Bus%20Stop,%20Akute,%20Ogun,%20Nigeria">
+                        <Link target="_blank" rel="noopener noreferrer" href="http://maps.google.com/maps?q=Plot%2030%20Unique%20Estate,%20Mubarak%20Bus%20Stop,%20Akute,%20Ogun,%20Nigeria">
                             <img src="/img/location.png" alt="location icon" />
                             Plot 30 Unique Estate, Mubarak Bus Stop, Akute, Ogun, Nigeria
-                        </a>
+                        </Link>
                     </p>
                 </div>
                 <div className="footer-div">
                     <p className="contact-details">
-                        <a href="#">
+                        <Link href="#">
                             <img src="/img/phone.png" alt="phone icon" />
                             07035102854 | 08025843632
-                        </a>
+                        </Link>
                     </p>
                     <p className="contact-details">
-                        <a href="mailto:test@gmail.com">
+                        <Link href="mailto:test@gmail.com">
                             <img src="/img/email.png" alt="email icon" />
                             contact@litehouse.com
-                        </a>
+                        </Link>
                     </p>
                 </div>
             </div>

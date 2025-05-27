@@ -1,5 +1,6 @@
 'use client'
 
+import Link from "next/link";
 import { useEffect } from "react";
 
 export default function Header() {
@@ -95,46 +96,46 @@ export default function Header() {
                 <div id="header-top">
                     <div id="header-top-left">
                         <p>
-                            <a target="_blank" rel="noopener noreferrer"
+                            <Link target="_blank" rel="noopener noreferrer"
                                 href="http://maps.google.com/maps?q=Plot%2030%20Unique%20Estate,%20Mubarak%20Bus%20Stop,%20Akute,%20Ogun,%20Nigeria">
                                 <img src="/img/location.png" alt="location icon" />
                                 Plot 30 Unique Estate, Mubarak Bus Stop, Akute, Ogun, Nigeria
-                            </a>
+                            </Link>
                         </p>
                     </div>
                     <div id="header-top-right">
                         <p>
-                            <a href="#">
+                            <Link href="#">
                                 <img src="/img/phone.png" alt="phone icon" />
                                 07035102854 | 08025843632
-                            </a>
+                            </Link>
                         </p>
                         <p>
-                            <a href="mailto:test@gmail.com">
+                            <Link href="mailto:test@gmail.com">
                                 <img src="/img/email.png" alt="email icon" />
                                 contact@litehouse.com
-                            </a>
+                            </Link>
                         </p>
                     </div>
                 </div>
                 <hr />
                 <div id="header-bottom">
-                    <a href="/" rel="home">
+                    <Link href="/" rel="home">
                         <img src="/img/logo-long-no-background.png" alt="Logo Lite House" id="logo" />
-                    </a>
+                    </Link>
                     <nav id="site-navigation" role="navigation">
                         <ul id="primary-menu">
-                            <li className="menu-item"><a href="/">Home</a></li>
+                            <li className="menu-item"><Link href="/">Home</Link></li>
                             <li className="menu-item menu-item-has-children">
-                                <a href="#">Properties</a>
+                                <Link href="#">Properties</Link>
                                 <ul className="sub-menu">
 
-                                    <li className="menu-item"><a href="/flat/list">Rooms</a></li>
-                                    <li className="menu-item"><a href="/land">Land</a></li>
+                                    <li className="menu-item"><Link href="/flat/list">Rooms</Link></li>
+                                    <li className="menu-item"><Link href="/land">Land</Link></li>
                                 </ul>
                             </li>
-                            <li className="menu-item"><a href="/about">About</a></li>
-                            <li className="menu-item contact"><a href="/contact">Contact</a></li>
+                            <li className="menu-item"><Link href="/about">About</Link></li>
+                            <li className="menu-item contact"><Link href="/contact">Contact</Link></li>
                         </ul>
                     </nav>
                     <button id="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
@@ -144,18 +145,18 @@ export default function Header() {
                 <div id="header-responsive">
                     <nav id="site-navigation-responsive" role="navigation">
                         <ul id="primary-menu">
-                            <li className="menu-item"><a href="/">Home</a></li>
+                            <li className="menu-item"><Link href="/">Home</Link></li>
                             <li className="menu-item-has-children">
                                 <button href="#">Properties
                                     <i aria-hidden="true" className="fa fa-caret-down"></i>
                                 </button>
                                 <ul className="sub-menu-responsive">
-                                    <li className="menu-item"><a href="/flat/list">Rooms</a></li>
-                                    <li className="menu-item"><a href="/land">Land</a></li>
+                                    <li className="menu-item"><Link href="/flat/list">Rooms</Link></li>
+                                    <li className="menu-item"><Link href="/land">Land</Link></li>
                                 </ul>
                             </li>
-                            <li className="menu-item"><a href="/about">About</a></li>
-                            <li className="menu-item contact"><a href="/contact">Contact</a></li>
+                            <li className="menu-item"><Link href="/about">About</Link></li>
+                            <li className="menu-item contact"><Link href="/contact">Contact</Link></li>
                         </ul>
                     </nav>
                 </div>

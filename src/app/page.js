@@ -1,5 +1,6 @@
 'use client'
 
+import Link from "next/link";
 import { useEffect } from "react";
 
 export default function Home() {
@@ -52,14 +53,14 @@ export default function Home() {
             <div id="landing-page-presentation">
                 <div className="text parallax">
                     <h1><span>L</span>ite your<br /> way <span>H</span>ome.</h1>
-                    <a id="read-more" href="#welcome">Read more
+                    <Link id="read-more" href="#welcome">Read more
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
                             className="feather feather-arrow-right">
                             <line x1="5" y1="12" x2="19" y2="12"></line>
                             <polyline points="12 5 19 12 12 19"></polyline>
                         </svg>
-                    </a>
+                    </Link>
                 </div>
                 <div className="swiper landing-page-swiper">
                     <div className="swiper-wrapper">
@@ -80,8 +81,8 @@ export default function Home() {
                 <section id="welcome" className="section-left advantages">
                     <div className="text">
                         <h2 className="title-section">Welcome to Lite House</h2>
-                        <p>Whether you're looking for a short let or a long stay, Lite House offers premium homes and
-                            land across Nigeria’s top locations. From business trips to extended relocations, enjoy trusted
+                        <p>Whether you&apos;re looking for a short let or a long stay, Lite House offers premium homes and
+                            land across Nigeria&apos;s top locations. From business trips to extended relocations, enjoy trusted
                             listings, seamless booking, and personalized support so you can focus on living, not
                             searching.
                         </p>
@@ -151,7 +152,7 @@ export default function Home() {
                             <h4>Flat 1</h4>
                             <div className="flat-item-bottom">
                                 <p>₦ 100,000/month</p>
-                                <a href="/flat/detail">Book now</a>
+                                <Link href="/flat/detail">Book now</Link>
                             </div>
                         </div>
                         <div className="flat-item swiper-slide">
@@ -159,7 +160,7 @@ export default function Home() {
                             <h4>Flat 2</h4>
                             <div className="flat-item-bottom">
                                 <p>₦ 120,000/month</p>
-                                <a href="/flat/detail">Book now</a>
+                                <Link href="/flat/detail">Book now</Link>
                             </div>
                         </div>
                         <div className="flat-item swiper-slide">
@@ -167,7 +168,7 @@ export default function Home() {
                             <h4>Flat 3</h4>
                             <div className="flat-item-bottom">
                                 <p>₦ 150,000/month</p>
-                                <a href="/flat/detail">Book now</a>
+                                <Link href="/flat/detail">Book now</Link>
                             </div>
                         </div>
                         <div className="flat-item swiper-slide">
@@ -175,7 +176,7 @@ export default function Home() {
                             <h4>Flat 4</h4>
                             <div className="flat-item-bottom">
                                 <p>₦ 180,000/month</p>
-                                <a href="/flat/detail">Book now</a>
+                                <Link href="/flat/detail">Book now</Link>
                             </div>
                         </div>
                     </div>
@@ -183,7 +184,7 @@ export default function Home() {
                     <div className="swiper-button-next flat-list-btn-next"></div>
                     <div className="swiper-button-prev flat-list-btn-prev"></div>
                 </div>
-                <a href="page-flat-list.html" className="view-more">View more</a>
+                <Link href="/flat/list" className="view-more">View more</Link>
             </section>
             <section className="land-section">
                 <div className="land-section-item left" style={{ backgroundImage: 'url(/img/land/land1.webp)' }}></div>
@@ -194,7 +195,7 @@ export default function Home() {
                         vetted
                         plots of land in Nigeria’s most promising areas from urban developments to emerging suburban
                         hubs.</p>
-                    <a href="/land" className="view-more">See available land</a>
+                    <Link href="/land" className="view-more">See available land</Link>
                 </div>
             </section>
         </div>

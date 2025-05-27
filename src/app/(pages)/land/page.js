@@ -2,6 +2,7 @@
 
 import PopupSlider from "app/(components)/popup";
 import TopSection from "app/(components)/top-section";
+import Link from "next/link";
 import { useEffect } from "react";
 
 export default function Land() {
@@ -154,7 +155,7 @@ export default function Land() {
                     documents, transparent pricing, and support every step of the way.
                     Own land with peace of mind: Lite House makes it simple, secure, and smart.<br /><br />
                     Nestled in a rapidly developing area, this plot of land offers the perfect balance between urban
-                    convenience and peaceful living. Whether you're looking to build your dream home or invest in a
+                    convenience and peaceful living. Whether you&apos;re looking to build your dream home or invest in a
                     high-growth zone, this location provides strong infrastructure access, proximity to major roads, and
                     verified legal documents. <br /><br />The flat terrain and ready-to-build status make it ideal for
                     residential
@@ -171,10 +172,10 @@ export default function Land() {
             </section>
             <section id="faq">
                 <div className="collapse">
-                    <a href="#" className="collapse-header">
+                    <Link href="#" className="collapse-header">
                         <h4>How do I schedule a site visit to inspect the land?</h4>
                         <i aria-hidden="true" className="fa fa-angle-up"></i>
-                    </a>
+                    </Link>
                     <div className="collapse-content">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus optio repudiandae suscipit
                             cupiditate rem, impedit fuga accusamus doloribus labore officiis ipsa voluptates! Id saepe
@@ -182,10 +183,10 @@ export default function Land() {
                     </div>
                 </div>
                 <div className="collapse">
-                    <a href="#" className="collapse-header">
+                    <Link href="#" className="collapse-header">
                         <h4>What types of land do you offer (residential, commercial, agricultural, etc.)?</h4>
                         <i aria-hidden="true" className="fa fa-angle-up"></i>
-                    </a>
+                    </Link>
                     <div className="collapse-content">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus optio repudiandae suscipit
                             cupiditate rem, impedit fuga accusamus doloribus labore officiis ipsa voluptates! Id saepe
@@ -193,10 +194,10 @@ export default function Land() {
                     </div>
                 </div>
                 <div className="collapse">
-                    <a href="#" className="collapse-header">
+                    <Link href="#" className="collapse-header">
                         <h4>How do I inquire about land for sale?</h4>
                         <i aria-hidden="true" className="fa fa-angle-up"></i>
-                    </a>
+                    </Link>
                     <div className="collapse-content">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus optio repudiandae suscipit
                             cupiditate rem, impedit fuga accusamus doloribus labore officiis ipsa voluptates! Id saepe
@@ -204,10 +205,10 @@ export default function Land() {
                     </div>
                 </div>
                 <div className="collapse">
-                    <a href="#" className="collapse-header">
+                    <Link href="#" className="collapse-header">
                         <h4>Are land documents verified before listing?</h4>
                         <i aria-hidden="true" className="fa fa-angle-up"></i>
-                    </a>
+                    </Link>
                     <div className="collapse-content">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus optio repudiandae suscipit
                             cupiditate rem, impedit fuga accusamus doloribus labore officiis ipsa voluptates! Id saepe
@@ -215,10 +216,10 @@ export default function Land() {
                     </div>
                 </div>
                 <div className="collapse">
-                    <a href="#" className="collapse-header">
+                    <Link href="#" className="collapse-header">
                         <h4>Can I visit the land before purchasing?</h4>
                         <i aria-hidden="true" className="fa fa-angle-up"></i>
-                    </a>
+                    </Link>
                     <div className="collapse-content">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus optio repudiandae suscipit
                             cupiditate rem, impedit fuga accusamus doloribus labore officiis ipsa voluptates! Id saepe
@@ -226,10 +227,10 @@ export default function Land() {
                     </div>
                 </div>
                 <div className="collapse">
-                    <a href="#" className="collapse-header">
+                    <Link href="#" className="collapse-header">
                         <h4>Do you assist with land transfer or registration?</h4>
                         <i aria-hidden="true" className="fa fa-angle-up"></i>
-                    </a>
+                    </Link>
                     <div className="collapse-content">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus optio repudiandae suscipit
                             cupiditate rem, impedit fuga accusamus doloribus labore officiis ipsa voluptates! Id saepe
