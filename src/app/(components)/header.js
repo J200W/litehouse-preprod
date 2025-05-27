@@ -1,10 +1,13 @@
 'use client'
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect } from "react";
 
 export default function Header() {
 
+
+    const pathname = usePathname();
 
     useEffect(() => {
 
@@ -53,6 +56,10 @@ export default function Header() {
             }
         });
 
+        $('.menu-item > a').on('click', function () {
+            closeMenu();
+        });
+
         $('#menu-toggle').on('click', function () {
             $(this).toggleClass('active');
             if ($('#menu-toggle').hasClass('active')) {
@@ -87,7 +94,8 @@ export default function Header() {
                 closeMenu();
             }
         });
-    }, [])
+        
+    }, []);
 
 
     return (
