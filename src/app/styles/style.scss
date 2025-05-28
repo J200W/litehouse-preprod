@@ -1584,13 +1584,19 @@ main {
                 }
 
                 .flat-card-image {
-                    height: 210px;
-                    max-width: 800px;
+                    height: auto;
+                    max-width: 260px;
+                    width: 100%;
                     overflow: hidden;
                     display: flex;
                     justify-content: center;
                     align-self: stretch;
                     align-items: center;
+
+                    @media screen and (max-width: $tablet-size) {
+                        height: 210px;
+                        max-width: unset;
+                    }
 
                     img {
                         width: 100%;
@@ -1947,14 +1953,17 @@ main {
                             textarea {
                                 width: 100%;
                                 border-radius: 0;
-                                border: none;
+                                border: 2px solid $color-white-fff;
+                                border-radius: 4px;
                                 background-color: $color-white-f6;
                                 padding: 1.2rem 1.5rem;
                                 font-size: 1rem;
                                 font-family: $roboto-flex;
                                 color: $color-black;
 
-                                &:focus {
+                                &:focus, &:visited  {
+                                    outline: none;
+                                    border: 2px solid $color-secondary;
                                     outline-color: $color-secondary;
                                 }
                             }
