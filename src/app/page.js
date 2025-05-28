@@ -46,6 +46,14 @@ export default function Home() {
                 prevEl: '.flat-list-btn-prev',
             },
         });
+
+        $(window).on('scroll', function () {
+            const scrollY = $(this).scrollTop();
+            const parallaxOffset = -scrollY * 0.05;
+            const parallaxBgOffset = -scrollY * 0.03;
+            $('.parallax').css('transform', `translateY(${parallaxOffset}px)`);
+            $('.parallax-bg').css('transform', `translateY(${parallaxBgOffset}px)`);
+        });
     }, [])
 
     return (
