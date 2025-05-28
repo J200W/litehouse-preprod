@@ -87,7 +87,7 @@ export default function Land() {
             return elementBottom > viewportTop && elementTop < viewportBottom;
         };
 
-        $(window).on('scroll load', function () {
+        $(window).on('scroll', function () {
             if (!landAnimated && $("#land-info").isInViewport()) {
                 $("#land-info-top p span").spincrement({
                     thousandSeparator: ",",
