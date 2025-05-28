@@ -57,7 +57,9 @@ export default function Header() {
         });
 
         $('.menu-item > a').on('click', function () {
-            closeMenu();
+            if ($('#menu-toggle').hasClass('active')) {
+                closeMenu();
+            }
         });
 
         $('#menu-toggle').on('click', function () {
@@ -94,7 +96,7 @@ export default function Header() {
                 closeMenu();
             }
         });
-        
+
     }, []);
 
 
